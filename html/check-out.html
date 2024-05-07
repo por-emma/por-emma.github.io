@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/check-out.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="web-layout">
+        <div class="info-panel">
+            <h1>Daniel Wellington</h1>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <table>
+                    <tr>
+                        <td><input type="email" name="email" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="news-offers">
+                            <label for="news-offers" style="vertical-align: top">Email me with news and offers</label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="shipping-address">
+                <h2>Shipping Address</h2>
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <div style="border: 1px solid lightgray; padding: 0 5px;">
+                                <label for="country/regions"
+                                    style="font-size:65%; text-transform: uppercase; padding: 6px 8px; position: absolute;">Country/region</label><br>
+                                <select id="country/regions" style="border:none; width: 100%; padding: 0 5px 10px;">
+                                    <option>Vietnam</option>
+                                    <option>Thailand</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="First name"></td>
+                        <td><input type="text" placeholder="Last name"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" placeholder="Company (Optional)"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" placeholder="Address"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" placeholder="Apartment, suite, etc. (optional)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="City"></td>
+                        <td><input type="number" placeholder="Postal code (optional)"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="tel" placeholder="Phone"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" id="save-info">
+                            <label for="save-info" style="vertical-align: top;">Save this information for next
+                                time</label>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+            <div style="width: 100%; margin-bottom: 50px; margin-top: 30px;">
+                <table>
+                    <tr>
+                        <td><a href="" style="text-decoration: none; color: black;"><i class="fa fa-angle-left"
+                                    aria-hidden="true"></i> Return to cart</a></td>
+                        <td style="text-align: right;"><button
+                                style="background-color: #00081b; color: #e6e6e6; border: none">Continue to
+                                shipping</button></td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="footer">
+                <a href="">Refund policy</a>
+                <a href="">Privacy policy</a>
+                <a href="">Terms of service</a>
+            </div>
+        </div>
+        <div class="summary-panel">
+            <div class="item-list">
+                <table>
+                    <tr>
+                        <td style="width: 0;"><img id="pd-img" style="width: 100px; height: 100px"></td>
+                        <td>
+                            <div id="pd-name"></div>
+                            <br>
+                            <div style="font-size: smaller; opacity: 50%;">Rose Gold / 20x26mm</div>
+                        </td>
+                        <td id="pd-price" rowspan="2" style="text-align: right; font-size: x-large"></td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <table class="discount">
+                <tr>
+                    <td><input type="text" id="discount-code" placeholder="Discount code"></td>
+                    <td style="text-align: right">
+                        <button
+                            style="width: 90%; padding-top: 16px; padding-bottom: 16px; background-color: transparent; opacity: 60%; border: 1px solid;">apply</button>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <div class="price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td style="text-align: right; font-size: x-large" id="subtotal"></td>
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td style="text-align: right; opacity: 50%">Calculated at next step</td>
+                    </tr>
+                </table>
+                <hr>
+                <table style="font-weight: bolder">
+                    <tr>
+                        <td>Total</td>
+                        <td style="text-align: right">
+                            <div style="opacity: 50%; display: inline; vertical-align: middle; margin-right: 10px">
+                                USD
+                            </div>
+                            <div style="font-size: xx-large; display: inline; vertical-align: middle" id="total"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="../js/check-out.js"></script>
+</body>
+
+</html>

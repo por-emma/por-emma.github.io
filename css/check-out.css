@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+.web-layout {
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    display: grid;
+    grid-template-areas:
+        "left right";
+}
+
+h1 {
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: larger;
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: larger;
+}
+
+hr {
+    opacity: 30%;
+}
+
+button {
+    text-transform: uppercase;
+    padding: 10px 40px 10px 40px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* info panel styling */
+/*
+*/
+.info-panel {
+    grid-area: left;
+    margin-left: 100px;
+    width: available;
+}
+
+.info-panel table {
+    width: inherit;
+}
+
+.info-panel tr,td {
+    padding: 0 20px 10px 0;
+}
+
+input {
+    font-family: "Segoe UI";
+    width: 100%;
+    padding: 20px 0 20px 10px;
+    border: 1px solid lightgray;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    opacity: 50%;
+}
+
+.info-panel .contact-info,
+.info-panel .shipping-address {
+    display: block;
+    width: 100%;
+}
+
+.info-panel .footer {
+    font-size: smaller;
+    margin: 15px 0 20px 0;
+}
+
+.info-panel .footer a {
+    margin-right: 20px;
+    color: black;
+}
+
+/*summary panel styling*/
+/*
+*/
+.summary-panel {
+    grid-area: right;
+    color: black;
+    background: #f5f5f5;
+    border: 2px solid #e6e6e6;
+    padding: 0 100px 0 50px;
+    margin-left: 50px;
+    /*display: none;*/
+}
+
+.summary-panel .item-list {
+    padding-top: 50px;
+    display: block;
+    width: 100%;
+}
+
+.summary-panel table {
+    width: inherit;
+}
+
+.summary-panel td {
+    padding: 10px 0 10px 0;
+    margin: 10px;
+}
+
+.summary-panel .item-list img {
+    width: 70px;
+    height: 70px;
+    background: white;
+    border: 2px solid #e6e6e6;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.summary-panel .discount {
+    width: 100%;
+}
+
+.summary-panel .price {
+    width: 100%;
+}
